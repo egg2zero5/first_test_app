@@ -7,7 +7,7 @@
 # Visit http://www.pragmaticprogrammer.com/titles/rails4 for more book information.
 #---
 class Notifier < ActionMailer::Base
-  default :from => 'Sam Ruby <depot@example.com>'
+  default :from => 'Railson <railson2020@gmail.com>'
 
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:
