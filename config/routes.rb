@@ -16,8 +16,6 @@ Depotnew::Application.routes.draw do
   end
 
 
-  resources :users
-
   resources :orders
 
   resources :line_items

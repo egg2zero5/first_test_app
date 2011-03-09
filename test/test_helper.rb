@@ -1,4 +1,6 @@
 class ActiveSupport::TestCase
+
+=begin  // Task I
 # ...
 # Add more helper methods to be used by all tests here...
 def login_as(user)
@@ -11,3 +13,4 @@ def setup
 login_as :one if defined? session
 end
 end
+=end

@@ -31,15 +31,7 @@
       <a href="http://www..../contact">Contact</a><br />
 <!-- START_HIGHLIGHT -->
        
-      <% if session[:user_id] %>
-        <br />
-
-        <%= link_to 'Orders',   orders_path   %><br />
-        <%= link_to 'Products', products_path %><br />
-        <%= link_to 'Users',    users_path    %><br />
-        <br />
-        <%= button_to 'Logout', logout_path, :method => :delete   %>
-      <% end %>
+      <!-- Task I -->
 <!-- END_HIGHLIGHT -->
     </div>
     <div id="time"><%= Time.now %></div>

@@ -7,7 +7,7 @@
 # Visit http://www.pragmaticprogrammer.com/titles/rails4 for more book information.
 #---
 class CartsController < ApplicationController
-	skip_before_filter :authorize, :only => [:create, :update, :destroy]
+	
   # GET /carts
   # GET /carts.xml
   def index
