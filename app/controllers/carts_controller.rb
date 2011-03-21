@@ -91,7 +91,7 @@ class CartsController < ApplicationController
     session[:cart_id] = nil
 
     respond_to do |format|
-      format.html { redirect_to(store_url) }
+      format.html { redirect_to(root_url) }
       format.xml  { head :ok }
     end
   end
