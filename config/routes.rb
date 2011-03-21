@@ -7,16 +7,29 @@
 # Visit http://www.pragmaticprogrammer.com/titles/rails4 for more book information.
 #---
 Depotnew::Application.routes.draw do
+  
   devise_for :users
 
-  get 'admin' => 'admin#index'
+  match "devise/registrations" => redirect("/store/index")
+  #resources  :users => "store/index"
+#devise_for :users,  :controllers => { :registrations => "users/registrations" }
+ #devise_for :users,  :controllers =>{ :registrations => 'store/index' }
+ # map.root :controller => "store#index" 
 
+=begin 
+  namespace :user do
+  root :to => "store#index"
+  end
+=end
+
+=begin   
+  get 'admin' => 'admin#index'
   controller :sessions do
     get  'login' => :new
     post 'login' => :create
     delete 'logout' => :destroy
   end
-
+=end
 
   resources :orders
 
@@ -80,9 +93,8 @@ Depotnew::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => "welcome#index"
+  #root :to => "home#index"
   root :to => 'store#index', :as => 'store'
-
   # ...
 
   # See how all your routes lay out with "rake routes"
