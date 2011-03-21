@@ -10,7 +10,7 @@ Depotnew::Application.routes.draw do
   
   devise_for :users
 
-  match "devise/registrations" => redirect("/store/index")
+ # match "devise/registrations" => redirect("/store/index")
   #resources  :users => "store/index"
 #devise_for :users,  :controllers => { :registrations => "users/registrations" }
  #devise_for :users,  :controllers =>{ :registrations => 'store/index' }
@@ -94,7 +94,7 @@ Depotnew::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   #root :to => "home#index"
-  root :to => 'store#index', :as => 'store'
+  root :to => 'store#index', :as => 'root'
   # ...
 
   # See how all your routes lay out with "rake routes"
