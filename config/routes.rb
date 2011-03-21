@@ -8,6 +8,8 @@
 #---
 Depotnew::Application.routes.draw do
   
+  resources :roles
+
   devise_for :users
 
  # match "devise/registrations" => redirect("/store/index")

@@ -32,6 +32,7 @@ GEM
     bcrypt-ruby (2.1.4)
     bcrypt-ruby (2.1.4-x86-mingw32)
     builder (2.1.2)
+    cancan (1.4.1)
     devise (1.1.7)
       bcrypt-ruby (~> 2.1.2)
       warden (~> 1.0.2)
@@ -81,7 +82,9 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  cancan
   devise
   rails (= 3.0.3)
+  sqlite3
   sqlite3-ruby
   will_paginate (>= 3.0.pre)
