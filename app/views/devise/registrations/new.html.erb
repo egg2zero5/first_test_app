@@ -11,6 +11,8 @@
 
   <p><%= f.label :password_confirmation %><br />
   <%= f.password_field :password_confirmation %></p>
+ 
+  <%= f.collection_select :role, User::ROLES, :to_s, :humanize %>
 
   <p><%= f.submit "Sign up" %></p>
 <% end %>
