@@ -9,10 +9,9 @@ class Ability
     if user.role=="admin"
         can :manage, :all
     elsif user.role=="user"
-        can :read, :all
-        can :manage, Line_items
+        can :manage, LineItem
     else
-       can :read, [Store] 
+       can :read, Store 
     end
    
   end
