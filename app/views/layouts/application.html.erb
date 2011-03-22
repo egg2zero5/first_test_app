@@ -29,12 +29,20 @@
       <a href="http://www..../faq">Questions</a><br />
       <a href="http://www..../news">News</a><br />
       <%= link_to "Contact","/contact_us" %><br />
+
+      </br></br>
+       <!-- <#%if can? :read , [@products,@orders,@carts] %> -->
+      <p style="color:sienna; font-size : 12pt"> Admin Sections <p> 
+      <%= link_to "Products", products_path %></br>
+      <%= link_to "Orders" , orders_path %></br>
+      <!-- <#%end%> -->
 <!-- START_HIGHLIGHT -->
        
       <!-- Task I -->
 <!-- END_HIGHLIGHT -->
     </div>
- 
+
+
  <!-- devise -->
 <div id="user_nav">
   <% if user_signed_in? %>

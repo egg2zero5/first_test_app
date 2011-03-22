@@ -8,10 +8,8 @@ class Ability
 
     if user.role=="admin"
         can :manage, :all
-    elsif user.role=="user"
+    else user.role=="user"
         can :manage, LineItem
-    else
-       can :read, Store 
     end
    
   end
