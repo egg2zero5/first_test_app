@@ -7,7 +7,8 @@
 # Visit http://www.pragmaticprogrammer.com/titles/rails4 for more book information.
 #---
 class CartsController < ApplicationController
-	
+# load_and_authorize_resource
+  	
   # GET /carts
   # GET /carts.xml
   def index

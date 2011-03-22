@@ -7,7 +7,7 @@
 # Visit http://www.pragmaticprogrammer.com/titles/rails4 for more book information.
 #---
 class LineItemsController < ApplicationController
-  load_and_authorize_resource  # :only => [:create,:show]
+  #load_and_authorize_resource  # :only => [:create,:show]
   	
   # GET /line_items
   # GET /line_items.xml

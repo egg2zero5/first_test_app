@@ -7,7 +7,7 @@
 # Visit http://www.pragmaticprogrammer.com/titles/rails4 for more book information.
 #---
 class OrdersController < ApplicationController
-   load_and_authorize_resource
+    load_and_authorize_resource :only => [:index,:edit,:update,:destroy]
   # GET /orders
   # GET /orders.xml
   def index
